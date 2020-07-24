@@ -1,11 +1,11 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "sapper-tailwind-template",
+  "description": "This is a sapper template with tailwind support",
   "version": "0.0.1",
   "scripts": {
     "dev": "run-p start:dev watch:tailwind",
     "start:dev": "sapper dev",
-    "build": "npm run build:tailwind && sapper build --legacy",
+    "build": "npm run build:tailwind && sapper build",
     "watch:tailwind": "postcss static/tailwind.css -o static/index.css -w",
     "build:tailwind": "NODE_ENV=production postcss static/tailwind.css -o static/index.css",
     "export": "sapper export",
